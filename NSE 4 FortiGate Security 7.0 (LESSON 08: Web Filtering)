@@ -1,0 +1,148 @@
+Web filters are applied in the following order:
+
+1. URL filter
+2. FortiGuard Web Filtering
+3. Web content filter
+4. Web script filter
+5. Antivirus scanning
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/833698/web-filter
+
+
+
+URL filter
+
+------------------------------------------------------------------------------------------
+|URL filter type             |Description                                                |
+------------------------------------------------------------------------------------------
+|Simple                      |The FortiGate tries to strictly match the full context.    |
+|                            |For example, if you enter www.facebook.com in the URL      |
+|                            |field, it only matches traffic with www.facebook.com. It   |
+|                            |won't match facebook.com or message.facebook.com.          |
+|                            |When the FortiGate finds a match, it performs the selected |
+|                            |URL action.                                                |
+|----------------------------|-----------------------------------------------------------|
+|Regular expression/ wildcard|The FortiGate tries to match the pattern based on the      |
+|                            |rules of regular expressions or wildcards. For example, if |
+|                            |you enter *fa* in the URL field, it matches all the        |
+|                            |content that has fa such as www.facebook.com,              |
+|                            |message.facebook.com, fast.com, and so on.                 |
+|                            |When the FortiGate finds a match, it performs the selected |
+|                            |URL action.                                                |
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+|URL filter action|Description                                                           |
+-----------------------------------------------------------------------------------------|
+|Exempt           |The traffic is allowed to bypass the remaining FortiGuard web filters |
+|                 |, web content filters, web script filters, antivirus scanning, and    |
+|                 |DLP                                                                   |
+|                 |proxy operations.                                                     |
+|-----------------|----------------------------------------------------------------------|
+|Block            |The FortiGate denies or blocks attempts to access any URL that        |
+|                 |matches the URL pattern. A replacement message is displayed.          |
+|-----------------|----------------------------------------------------------------------|
+|Allow            |The traffic is passed to the remaining FortiGuard web filters, web    |
+|                 |content filters, web script filters, antivirus proxy operations, and  |
+|                 |DLP proxy operations. If the URL does not appear in the URL list, the |
+|                 |traffic is permitted.                                                 |
+|-----------------|----------------------------------------------------------------------|
+|Monitor          |The traffic is processed the same way as the Allow action. For the    |
+|                 |Monitor action, a log message is generated each time a matching       |
+|                 |traffic pattern is established.                                       |
+------------------------------------------------------------------------------------------
+
+Security Profiles > Web Filter > Static URL Filter
+
+-------------------------------------------------------------
+|Proxy-Based(Profile)|Flow-Based(Profile)|Flow-Based(Policy)|
+-------------------------------------------------------------
+|Allow               |Allow              |Allow             |
+|Block               |Block              |Block             |
+|Monitor             |Monitor            |Monitor           |
+|Exempt              |Exempt             |Exempt            |
+-------------------------------------------------------------
+
+
+FortiGuard Web Filtering
+
+------------------------------------------------------------------------------------------
+|FortiGuard web filter action|Description                                                |
+------------------------------------------------------------------------------------------
+|Allow                       |Permit access to the sites in the category.                |
+|----------------------------|-----------------------------------------------------------|
+|Monitor                     |Permit and log access to sites in the category. User quotas|
+|                            |can be enabled for this option (see Usage quota).          |
+|----------------------------|-----------------------------------------------------------|
+|Block                       |Prevent access to the sites in the category. Users trying  |
+|                            |to access a blocked site see a replacement message         |
+|                            |indicating the site is blocked.                            |
+|----------------------------|-----------------------------------------------------------|
+|Warning                     |Display a message to the user allowing them to continue if |
+|                            |they choose.                                               |
+|----------------------------|-----------------------------------------------------------|
+|Authenticate                |Require the user to authenticate with the FortiGate before |
+|                            |allowing access to the category or category group.         |
+|----------------------------|-----------------------------------------------------------|
+|Disable                     |Remove the category from the from the web filter profile.  |
+|                            |This option is only available for local or remote          |
+|                            |categories from the right-click menu.                      |
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+|FortiGuard web filter category|Where to find more information                           |
+------------------------------------------------------------------------------------------
+|All URL categories            |See Web Filter Categories.                               |
+|------------------------------|---------------------------------------------------------|
+|Local categories              |See Web rating override.                                 |
+|------------------------------|---------------------------------------------------------|
+|Remote category               |See Threat feeds.                                        |
+------------------------------------------------------------------------------------------
+
+Security Profiles > Web Filter > FortiGuard Category Based Filter
+
+-------------------------------------------------------------
+|Proxy-Based(Profile)|Flow-Based(Profile)|Flow-Based(Policy)|
+-------------------------------------------------------------
+|Allow               |Allow              |Accept            |
+|--------------------|-------------------|------------------|
+|Block               |Block              |Deny              |
+|--------------------|-------------------|------------------|
+|Monitor             |Monitor            |                  |
+|--------------------|-------------------|------------------|
+|Warning             |Warning            |                  |
+|--------------------|-------------------|------------------|
+|Authenticate        |Authenticate       |                  |
+-------------------------------------------------------------
+
+
+Web content filter
+
+------------------------------------------------------------------------------------------
+|Web content pattern type|Description                                                    |
+------------------------------------------------------------------------------------------
+|Wildcard                |Use this setting to block or exempt one word or text strings of|
+|                        |up to 80 characters. You can also use wildcard symbols such as |
+|                        |? or * to represent one or more characters. For example, a     |
+|                        |wildcard expression forti*.com matches fortinet.com and        |
+|                        |fortiguard.com. The * represents any character appearing any   |
+|                        |number of times.                                               |
+|------------------------|---------------------------------------------------------------|
+|Regular expression      |Use this setting to block or exempt patterns of regular        |
+|                        |expressions that use some of the same symbols as wildcard      |
+|                        |expressions, but for different purposes. In regular expressions|
+|                        |, * represents the character before the symbol. For example,   |
+|                        |forti*.com matches fortiii.com but not fortinet.com or         |
+|                        |fortiice.com. In this case, the symbol * represents i appearing|
+|                        |any number of times.                                           |
+------------------------------------------------------------------------------------------
+
+Security Profiles > Web Filter > Content Filter
+
+-------------------------------------------------------------
+|Proxy-Based(Profile)|Flow-Based(Profile)|Flow-Based(Policy)|
+-------------------------------------------------------------
+|Exempt              |-                  |-                 |
+|--------------------|-------------------|------------------|
+|Block               |-                  |-                 |
+-------------------------------------------------------------
