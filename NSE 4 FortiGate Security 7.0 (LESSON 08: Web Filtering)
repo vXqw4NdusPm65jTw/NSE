@@ -1,3 +1,14 @@
+NGFW Mode
+|-Profile-based
+ |-Inspection Mode
+  |-Flow-based
+  |-Proxy-based
+|-Policy-based
+ |-Inspection Mode
+  |-Flow-based
+
+
+
 Web filters are applied in the following order:
 
 1. URL filter
@@ -36,8 +47,7 @@ URL filter
 -----------------------------------------------------------------------------------------|
 |Exempt           |The traffic is allowed to bypass the remaining FortiGuard web filters |
 |                 |, web content filters, web script filters, antivirus scanning, and    |
-|                 |DLP                                                                   |
-|                 |proxy operations.                                                     |
+|                 |DLP proxy operations.                                                 |
 |-----------------|----------------------------------------------------------------------|
 |Block            |The FortiGate denies or blocks attempts to access any URL that        |
 |                 |matches the URL pattern. A replacement message is displayed.          |
