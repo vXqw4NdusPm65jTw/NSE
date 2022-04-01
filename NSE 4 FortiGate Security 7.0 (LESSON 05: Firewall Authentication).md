@@ -39,3 +39,12 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/952303/r
 A second RADIUS server can be configured in the same RADIUS profile so in the event the first RADIUS server does not respond, the second server can be checked. If the first RADIUS server responds with an Access-Reject, no further servers are queried.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/177729/using-multiple-radius-servers
+
+**A remote LDAP user is trying to authenticate with a username and password. How does FortiGate verify the login credentials?**
+
+- ~~FortiGate queries its own database for user credentials.~~
+- FortiGate sends the user-entered credentials to the remote server for verification.
+
+When using the GUI, wildcard admin is the only remote admin account that does not require you to enter a password on account creation. That password is normally used when the remote authentication server is unavailable during authentication.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/747268/configuring-wildcard-admin-accounts
