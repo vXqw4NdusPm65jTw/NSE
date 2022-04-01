@@ -25,7 +25,7 @@
 
 |||
 | --- | --- |
-| Enrollment Method | Online SCEP: the Simple Certificate Enrollment Protocol (SCEP) allows devices to enroll for a certificate by using a URL and a password. The SCEP server works as a proxy to forward the FortiGate’s request to the CA and returns the result to the FortiGate (setting up an SCEP server is beyond the scope of this topic). Once the request is approved by the SCEP server, the FortiGate will have a signed certificate containing the details provided in the CSR. |
+| **Enrollment Method** | Online SCEP: the Simple Certificate Enrollment Protocol (SCEP) allows devices to enroll for a certificate by using a URL and a password. The SCEP server works as a proxy to forward the FortiGate’s request to the CA and returns the result to the FortiGate (setting up an SCEP server is beyond the scope of this topic). Once the request is approved by the SCEP server, the FortiGate will have a signed certificate containing the details provided in the CSR. |
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/322226/uploading-a-certificate-using-the-gui
 
