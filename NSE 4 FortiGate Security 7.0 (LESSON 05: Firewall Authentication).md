@@ -57,3 +57,17 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/747268/c
 In some scenarios, an administrator might need to create temporary user accounts with a defined expiry time to access network resources.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/29900/user-groups#guest
+
+**Guest accounts are most commonly used for which purposes?**
+
+- ~~To provide temporary visitor access to corporate network resources~~
+- To provide temporary visitor access to wireless networks
+
+For example, if there is a large conference and may attendees require temporary network access for a few days.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/29900/user-groups#guest
+
+**Firewall policies dictate whether a user or device can or cannot authenticate on a network. Which statement about firewall authentication is true?**
+
+- Firewall policies can be configured to authenticate certificate users.
+- ~~The order of the firewall policies always determines whether a user's credentials are determined actively or passively.~~
