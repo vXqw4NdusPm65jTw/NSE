@@ -7,7 +7,6 @@ You can define local users and peer users on the FortiGate unit. You can also de
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/622284/user-authentication
 
-
 **Which type of token can generate OTPs to provide two-factor authentication to users in your network?**
 
 - FortiToken Mobile
