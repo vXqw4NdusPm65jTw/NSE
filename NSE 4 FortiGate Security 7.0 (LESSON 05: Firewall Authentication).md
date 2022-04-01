@@ -21,6 +21,12 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/323465/f
 - ~~FortiGate must query the remote RADIUS server using the distinguished name (dn).~~
 - RADIUS group memberships are provided by vendor-specific attributes (VSAs) configured on the RADIUS server.
 
+|||
+| --- | --- |
+| **Distinguished Name** | Used to look up user account entries on the LDAP server. It reflects the hierarchy of LDAP database object classes above the CN identifier in which you are doing the lookup. Enter dc=COMPANY,dc=com to specify the root of the domain to include all objects. Enter ou=VPN-Users,dc=COMPANY,dc=com to look up users under a specific organization unit.|
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/102264/configuring-an-ldap-server
+
 Some vendors want or need to send attributes that do not match any of the defined IETF attributes. This can be accomplished by using RADIUS attribute type 26, which allows a vendor to encapsulate their own specific attributes in this standard AVP. In order to support VSAs, the RADIUS server requires a dictionary to define the VSAs. This dictionary is typically supplied by the client or server vendor.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/952303/radius-avps-and-vsas
