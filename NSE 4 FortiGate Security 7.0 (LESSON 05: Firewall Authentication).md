@@ -30,3 +30,12 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/102264/c
 Some vendors want or need to send attributes that do not match any of the defined IETF attributes. This can be accomplished by using RADIUS attribute type 26, which allows a vendor to encapsulate their own specific attributes in this standard AVP. In order to support VSAs, the RADIUS server requires a dictionary to define the VSAs. This dictionary is typically supplied by the client or server vendor.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/952303/radius-avps-and-vsas
+
+**What is a valid reply from a RADIUS server to an ACCESS-REQUEST packet from FortiGate?**
+
+- ~~ACCESS-PENDING~~
+- ACCESS-REJECT
+
+A second RADIUS server can be configured in the same RADIUS profile so in the event the first RADIUS server does not respond, the second server can be checked. If the first RADIUS server responds with an Access-Reject, no further servers are queried.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/177729/using-multiple-radius-servers
