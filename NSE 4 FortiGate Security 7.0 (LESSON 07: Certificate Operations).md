@@ -18,7 +18,7 @@
 - Multiple clients connecting to multiple servers
 - ~~Protecting the SSL server~~
 
-**Which CSR enrollment method is supported by FortiGate?
+**Which CSR enrollment method is supported by FortiGate?**
 
 - ~~Enrollment over Secure Transport (EST)~~
 - Simple Certificate Enrollment Protocol (SCEP)
