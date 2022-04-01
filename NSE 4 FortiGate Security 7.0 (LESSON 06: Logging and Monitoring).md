@@ -4,12 +4,19 @@
 - Security
 
 Security Logs > Antivirus
+
 Security Logs > Web Filter
+
 Security Logs > DNS Query
+
 Security Logs > Application Control
+
 Security Logs > Intrusion Prevention
+
 Security Logs > Anomaly
+
 Security Logs > Data Leak Prevention
+
 Security Logs > SSH and Security Logs > SSL
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/986892/sample-logs-by-log-type
@@ -34,7 +41,7 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/986892/s
 - ~~UDP~~
 - TCP
 
-**In your firewall policy, which setting must you enable to generate logs on traffic sent through that firewall policy?
+**In your firewall policy, which setting must you enable to generate logs on traffic sent through that firewall policy?**
 
 - Log Allowed Traffic
 - ~~Event Logging~~
