@@ -48,3 +48,12 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/177729/u
 When using the GUI, wildcard admin is the only remote admin account that does not require you to enter a password on account creation. That password is normally used when the remote authentication server is unavailable during authentication.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/747268/configuring-wildcard-admin-accounts
+
+**Which statement about guest user groups is true?**
+
+- Guest user group accounts are temporary.
+- ~~Guest user group account passwords are temporary.~~
+
+In some scenarios, an administrator might need to create temporary user accounts with a defined expiry time to access network resources.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/29900/user-groups#guest
