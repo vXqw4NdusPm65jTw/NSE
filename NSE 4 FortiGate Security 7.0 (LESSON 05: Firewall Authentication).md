@@ -71,3 +71,25 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/29900/us
 
 - Firewall policies can be configured to authenticate certificate users.
 - ~~The order of the firewall policies always determines whether a user's credentials are determined actively or passively.~~
+
+| Setting | Description |
+| --- | --- |
+| Certificate | If using HTTPS protocol support, select the local certificate to use for authentication. This is available only if HTTPS and/or Redirect HTTP Challenge to a Secure Channel (HTTPS) are selected. |
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/709376/authentication-settings
+
+**Which statement about active authentication is true?**
+
+- ~~Active authentication is always used before passive authentication.~~
+- The firewall policy must allow the HTTP, HTTPS, FTP, and/or Telnet protocols in order for the user to be prompted for credentials.
+
+| Setting | Description |
+| --- | --- |
+| Protocol Support | Select the protocols to challenge during firewall user authentication. When you enable user authentication within a security policy, the authentication challenge is normally issued for any of four protocols, depending on the connection protocol: HTTP (you can set this to redirect to HTTPS), HTTPS, FTP, Telnet. The protocols selected here control which protocols support the authentication challenge. Users must connect with a supported protocol first so they can subsequently connect with other protocols. If HTTPS is selected as a protocol support method, it allows the user to authenticate with a customized local certificate. When you enable user authentication within a security policy, FortiOS challenges the security policy user to authenticate. For user ID and password authentication, the user must provide their username and password. For certificate authentication (HTTPS or HTTP redirected to HTTPS only), you can install customized certificates on the unit and the user can also install customized certificates on their browser. Otherwise, users see a warning message and must accept a default Fortinet certificate. The network user's web browser may deem the default certificate invalid. |
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/709376/authentication-settings
+
+**Which statement about captive portal is true?**
+
+- ~~Captive portal must be hosted on a FortiGate device.~~
+- Captive portal exempt specific devices from authenticating.
