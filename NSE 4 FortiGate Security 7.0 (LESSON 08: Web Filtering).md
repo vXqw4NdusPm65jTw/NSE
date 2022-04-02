@@ -1,3 +1,97 @@
+**Which is the default inspection mode on a firewall policy?**
+
+- ~~Proxy based~~
+- Flow based
+
+FortiOS supports flow-based and proxy-based inspection in firewall policies. You can select the inspection mode when configuring a policy.
+
+Flow-based inspection takes a snapshot of content packets and uses pattern matching to identify security threats in the content.
+
+Proxy-based inspection reconstructs content that passes through the FortiGate and inspects the content for security threats.
+
+Certain security profiles allows users to display flow-based or proxy-based feature sets.
+
+This following topics provide information about inspection modes for various security profile features:
+
+- Flow mode inspection (default mode)
+- Proxy mode inspection
+- Inspection mode feature comparison
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/721410/inspection-modes
+
+**How does NGFW policy-based mode differ from profile-based mode?**
+
+- ~~Policy-based flow inspection supports web profile overrides.~~
+- Policy-based flow inspection defines URL filters directly in the firewall policy.
+
+Profile-based next-generation firewall (NGFW) mode is the traditional mode where you create a profile (antivirus, web filter, and so on) and then apply the profile to a policy.
+
+In policy-based NGFW mode, you allow applications and URL categories to be used directly in security policies, without requiring web filter or application control profiles.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/978598/profile-based-ngfw-vs-policy-based-ngfw
+
+**Which statement about proxy-based web filtering is true?**
+
+- It requires more resources than flow-based
+- ~~It transparently analyzes the TCP flow of the traffic~~
+
+When a firewall policy’s inspection mode is set to proxy, traffic flowing through the policy will be buffered by the FortiGate for inspection. This means that the packets for a file, email message, or web page will be held by the FortiGate until the entire payload is inspected for violations (virus, spam, or malicious web links). After FortiOS finishes the inspection, the payload is either released to the destination (if the traffic is clean) or dropped and replaced with a replacement message (if the traffic contains violations).
+
+To optimize inspection, the policy can be configured to block or ignore files or messages that exceed a certain size. To prevent the receiving end user from timing out, you can apply client comforting. This allows small portions of the payload to be sent while it is undergoing inspection.
+
+Proxy mode provides the most thorough inspection of the traffic; however, its thoroughness sacrifices performance, making its throughput slower than that of a flow mode policy. Under normal traffic circumstances, the throughput difference between a proxy-based and flow-based policy is not significant.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/969330/proxy-mode-inspection
+
+**Which is a valid action for FortiGuard web category filtering?**
+
+- Allow
+- ~~Deny~~
+
+| FortiGuard web filter action | Description |
+| --- | --- |
+| Allow | Permit access to the sites in the category. |
+| Monitor | Permit and log access to sites in the category. User quotas can be enabled for this option (see Usage quota). |
+| Block | Prevent access to the sites in the category. Users trying to access a blocked site see a replacement message indicating the site is blocked. |
+| Warning | Display a message to the user allowing them to continue if they choose. |
+| Authenticate | Require the user to authenticate with the FortiGate before allowing access to the category or category group. |
+| Disable | Remove the category from the from the web filter profile. This option is only available for local or remote categories from the right-click menu. |
+
+**Which is a valid action for static URL filtering?**
+
+- Exempt
+- ~~Warning~~
+
+| URL filter action | Description |
+| --- | --- |
+| Exempt | The traffic is allowed to bypass the remaining FortiGuard web filters, web content filters, web script filters, antivirus scanning, and DLP proxy operations. |
+| Block | The FortiGate denies or blocks attempts to access any URL that matches the URL pattern. A replacement message is displayed. |
+| Allow | The traffic is passed to the remaining FortiGuard web filters, web content filters, web script filters, antivirus proxy operations, and DLP proxy operations. If the URL does not appear in the URL list, the traffic is permitted. |
+| Monitor | The traffic is processed the same way as the Allow action. For the Monitor action, a log message is generated each time a matching traffic pattern is established. |
+
+**Which action can be used with the FortiGuard quota feature?**
+
+- Monitor
+- ~~Shape~~
+
+Quotas can be set for the Monitor, Warning, or Authenticate actions. Once the quota is reached, the traffic is blocked and the replacement message page displays.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/801136/usage-quota
+
+**Which statement about web profile overrides is true?**
+
+- ~~It is used to change the website category.~~
+- Configured users can activate this setting through an override link on the FortiGuard block page.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/408599/web-profile-override
+
+**Which is required to configure YouTube video filtering?**
+
+- YouTube API key
+- ~~Username~~
+
+
+
 NGFW Mode
 |-Profile-based
  |-Inspection Mode
