@@ -122,10 +122,7 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/105208/b
 - ~~The certificate is not installed correctly.~~
 - The profile is not associated with the correct firewall policy.
 
-
-
-
-
+----------------------------------------------------------------------------------------------------
 
 NGFW Mode
 |-Profile-based
