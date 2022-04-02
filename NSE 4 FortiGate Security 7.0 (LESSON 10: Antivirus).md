@@ -93,9 +93,11 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/419589/i
 - ~~Logs all files that are over 5 MB~~
 
 | Parameter | Description | Type | Size | Default |
+| --- | --- | --- | --- | --- |
 | oversize-log | Enable/disable logging for antivirus oversize file blocking. | option | - | disable |
 
 | Option | Description |
+| --- | --- |
 | disable | Disable logging for antivirus oversize file blocking. |
 | enable | Enable logging for antivirus oversize file blocking. |
 
