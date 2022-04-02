@@ -57,6 +57,8 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/969330/p
 | Authenticate | Require the user to authenticate with the FortiGate before allowing access to the category or category group. |
 | Disable | Remove the category from the from the web filter profile. This option is only available for local or remote categories from the right-click menu. |
 
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/675558/fortiguard-filter
+
 **Which is a valid action for static URL filtering?**
 
 - Exempt
@@ -68,6 +70,8 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/969330/p
 | Block | The FortiGate denies or blocks attempts to access any URL that matches the URL pattern. A replacement message is displayed. |
 | Allow | The traffic is passed to the remaining FortiGuard web filters, web content filters, web script filters, antivirus proxy operations, and DLP proxy operations. If the URL does not appear in the URL list, the traffic is permitted. |
 | Monitor | The traffic is processed the same way as the Allow action. For the Monitor action, a log message is generated each time a matching traffic pattern is established. |
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/615462/url-filter
 
 **Which action can be used with the FortiGuard quota feature?**
 
