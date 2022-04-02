@@ -51,6 +51,8 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/729214/v
 | --- | --- | --- | --- | --- |
 | login-timeout | SSLVPN maximum login timeout. | integer | Minimum value: 10 Maximum value: 180 | 30 |
 
+https://docs.fortinet.com/document/fortigate/7.0.5/cli-reference/363620/config-vpn-ssl-settings
+
 **Which component issues and signs the client certificate?**
 
 - FortiClient EMS
