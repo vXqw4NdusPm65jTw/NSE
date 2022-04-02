@@ -23,6 +23,7 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/923365/d
 The following table indicates which protocols can be inspected by the designated antivirus scan modes.
 
 || HTTP | FTP | IMAP | POP3 | SMTP | NNTP | MAPI | CIFS | SSH |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Proxy | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes* | Yes |
 | Flow | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | No |
 
