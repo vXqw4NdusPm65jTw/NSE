@@ -90,6 +90,37 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/408599/w
 - YouTube API key
 - ~~Username~~
 
+If the FortiGuard rating fails, it uses the videofilter.youtube-key to communicate with the Google API server to get its category and channel ID. This is the API query setting and it requires the user’s own YouTube API key string. This configuration is optional.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/860867/filtering-based-on-fortiguard-categories
+
+**Which action can be used with the video FortiGuard categories?**
+
+- ~~Authenticate~~
+- Monitor
+
+**Which statement about blocking the known botnet command and control domains is true?**
+
+- DNS lookups are checked against the botnet command and control database.
+- ~~The botnet command and control domains can be enabled on the web filter profile.~~
+
+FortiGuard Service continually updates the botnet C&C domain list. The botnet C&C domain blocking feature can block the botnet website access at the DNS name resolving stage. This provides additional protection for your network.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/105208/botnet-c-c-domain-blocking
+
+**Which security profile inspects only the fully qualified domain name?**
+
+- ~~Web Filter~~
+- DNS Filter
+
+**You have configured your security profiles, but they are not performing web or DNS inspection. Why?**
+
+- ~~The certificate is not installed correctly.~~
+- The profile is not associated with the correct firewall policy.
+
+
+
+
 
 
 NGFW Mode
