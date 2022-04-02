@@ -51,8 +51,8 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/922096/i
 
 To verify FortiGuard connectivity in the CLI:
 
-execute ping service.fortiguard.net
-execute ping update.fortiguard.net
+- execute ping service.fortiguard.net
+- execute ping update.fortiguard.net
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/703926/verifying-connectivity-to-fortiguard
 
