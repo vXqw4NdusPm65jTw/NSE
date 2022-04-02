@@ -69,3 +69,5 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/241925/u
 |||
 | --- | --- |
 | \<verbose\> | The level of verbosity as one of: 1 - print header of packets, 2 - print header and data from IP of packets, 3 - print header and data from Ethernet of packets, 4 - print header of packets with interface name |
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/680228/performing-a-sniffer-trace-cli-and-packet-capture
