@@ -28,7 +28,7 @@
 - Two
 - ~~Four~~
 
-**The heartbeat interface IP address 169.254.0.1 is assinged to which FortiGate in an HA cluster?**
+**The heartbeat interface IP address 169.254.0.1 is assigned to which FortiGate in an HA cluster?**
 
 - The FortiGate with the highest serial number
 - ~~The FortiGate with the highest priority~~
