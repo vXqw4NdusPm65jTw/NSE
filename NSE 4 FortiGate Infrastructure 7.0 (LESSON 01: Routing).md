@@ -126,3 +126,13 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/139692/r
 | \<verbose\> | The level of verbosity as one of: 1 - print header of packets, 2 - print header and data from IP of packets, 3 - print header and data from Ethernet of packets, 4 - print header of packets with interface name |
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/680228/performing-a-sniffer-trace-cli-and-packet-capture
+
+----------------------------------------------------------------------------------------------------
+
+**An administrator has configured a strict RPF check on FortiGate. Which statement is true about the strict RPF check?**
+
+- ~~The strict RPF check is run on the first sent and reply packet of any new session.~~
+- Strict RPF checks the best route back to the source using the incoming interface.
+- ~~Strict RPF checks only for the existence of at least one active route back to the source using the incoming interface.~~
+- ~~Strict RPF checks only for the existence of at least one active route back to the source using the incoming interface.~~
+- ~~Strict RPF allows packets back to sources with all active routes.~~
