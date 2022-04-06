@@ -37,3 +37,12 @@
 
 - ~~HTTP/HTTPS~~
 - TFTP
+
+----------------------------------------------------------------------------------------------------
+
+**Which CLI command allows administrators to troubleshoot Layer 2 issue, such as an IP address conflict?**
+
+- ~~get system status~~
+- ~~get system performance status~~
+- ~~diagnose sys top~~
+- get system arp
