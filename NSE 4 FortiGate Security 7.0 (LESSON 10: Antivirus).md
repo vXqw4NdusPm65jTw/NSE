@@ -117,3 +117,11 @@ https://docs.fortinet.com/document/fortigate/7.0.5/cli-reference/318620/config-f
 - ~~If the virus is detected, the last packet is delivered to the client.~~
 - Optimized performance compared to proxy-based inspection.
 - FortiGate buffers the whole file but transmits to the client simultaneously.
+
+Flow-based antivirus offers higher throughput performance.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/836396/antivirus
+
+Starting from 6.4.0, the scan mode option is no longer available for flow-based AV. This means that AV no longer exclusively uses the default or legacy scan modes when handling traffic on flow-based firewall policies. Instead, AV in flow-based policies uses a hybrid of the two scan modes.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/836396/antivirus
