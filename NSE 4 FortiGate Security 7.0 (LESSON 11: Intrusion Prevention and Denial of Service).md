@@ -65,6 +65,8 @@ When enabled, the IPS engine fails open, and it affects all protocols inspected 
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/419589/ips-configuration-options#Fail-open
 
+----------------------------------------------------------------------------------------------------
+
 **Type: Signature, Action: Block, Packet logging: Enable, Status: Enable, Rate-based settings: Default, Exempt IPs: 0. Review the Intrusion Prevention System (IPS) profile signature settings. Which statement is correct in adding the FTP.Login.Failed signature to the IPS sensor profile?**
 
 - Traffic matching the signature will be silently dropped and logged.
