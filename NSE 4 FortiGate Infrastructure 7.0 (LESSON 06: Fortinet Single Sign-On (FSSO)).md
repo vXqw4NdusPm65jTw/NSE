@@ -73,3 +73,16 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/450337/f
 
 - Agentless polling
 - ~~Collector agent-based polling~~
+
+----------------------------------------------------------------------------------------------------
+
+**Which two statemnets about FortiGate FSSO agentless polling mode are true? (Choose two.)**
+
+- ~~FortiGate uses the AD server as the collector agent.~~
+- FortiGate uses the SMB protocol to read the event viewer logs from the DCs.
+- ~~FortiGate does not support workstation check.~~
+- FortiGate directs the collector agent to use a remote LDAP server.
+
+For Windows AD networks, FortiGate devices can also provide SSO capability by directly polling Windows Security Event log entries on Windows DC for user log in information. This configuration does not require a CA or DC agent.
+
+https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/450337/fsso
