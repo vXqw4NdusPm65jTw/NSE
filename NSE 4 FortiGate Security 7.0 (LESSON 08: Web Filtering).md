@@ -124,6 +124,15 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/105208/b
 
 ----------------------------------------------------------------------------------------------------
 
+**FortiGuard categories can be overridden and defined in different categories. To create a web rating override for example.com home page, the override must be configured using a specific syntax. Which two syntaxes are correct to configure web rating for the home page? (Choose two.)**
+
+- www.example.com:443
+- www.example.com
+- example.com
+- ~~www.example.com/index.html~~
+
+----------------------------------------------------------------------------------------------------
+
 NGFW Mode
 |-Profile-based
  |-Inspection Mode
