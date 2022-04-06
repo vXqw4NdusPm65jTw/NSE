@@ -107,3 +107,13 @@ https://docs.fortinet.com/document/fortigate/7.0.5/cli-reference/318620/config-f
 
 - ~~execute update antivirus~~
 - execute update-av
+
+----------------------------------------------------------------------------------------------------
+
+**Which three statements about a flow-based antivirus profile are correct? (Choose three.)**
+
+- ~~IPS engine handles the process as a standalone.~~
+- Flow-based inspection uses a hybrid of scanning modes available in proxy-based inspection.
+- ~~If the virus is detected, the last packet is delivered to the client.~~
+- Optimized performance compared to proxy-based inspection.
+- FortiGate buffers the whole file but transmits to the client simultaneously.
