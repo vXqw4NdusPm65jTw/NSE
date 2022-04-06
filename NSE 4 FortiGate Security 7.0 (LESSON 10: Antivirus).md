@@ -125,3 +125,10 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/836396/a
 Starting from 6.4.0, the scan mode option is no longer available for flow-based AV. This means that AV no longer exclusively uses the default or legacy scan modes when handling traffic on flow-based firewall policies. Instead, AV in flow-based policies uses a hybrid of the two scan modes.
 
 https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/836396/antivirus
+
+**Which two statements about antivirus scanning mode are true? (Choose two.)**
+
+- ~~In proxy-based inspection mode, files bigger than the buffer size are scanned.~~
+- In flow-based inspection mode, FortiGate buffers the file, but also simultaneously transmits it to the client.
+- In proxy-based inspection mode, antivirus scanning buffers the whole file for scanning, before sending it to the client.
+- ~~In flow-based inspection mode, files bigger than the buffer size are scanned.~~
