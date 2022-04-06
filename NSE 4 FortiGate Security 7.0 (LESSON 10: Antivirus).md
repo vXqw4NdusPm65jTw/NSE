@@ -128,7 +128,7 @@ https://docs.fortinet.com/document/fortigate/7.0.5/administration-guide/836396/a
 
 **Which two statements about antivirus scanning mode are true? (Choose two.)**
 
-- ~~In proxy-based inspection mode, files bigger than the buffer size are scanned.~~
+- In proxy-based inspection mode, files bigger than the buffer size are scanned.
 - In flow-based inspection mode, FortiGate buffers the file, but also simultaneously transmits it to the client.
 - In proxy-based inspection mode, antivirus scanning buffers the whole file for scanning, before sending it to the client.
 - ~~In flow-based inspection mode, files bigger than the buffer size are scanned.~~
